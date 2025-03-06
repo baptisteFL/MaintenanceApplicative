@@ -38,4 +38,9 @@ public abstract class AbstractItem {
     public int getQuality() {
         return item.quality;
     }
+
+    protected void increaseSellIn()
+    {
+        item.sellIn++;
+    }
 }

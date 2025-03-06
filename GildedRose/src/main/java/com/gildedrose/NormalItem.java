@@ -8,7 +8,7 @@ class NormalItem extends AbstractItem {
     @Override
     protected void updateQuality() {
         decreaseQuality();
-        if (item.sellIn < 0) {
+        if (item.sellIn < 1) {
             decreaseQuality();
         }
         decreaseSellIn();

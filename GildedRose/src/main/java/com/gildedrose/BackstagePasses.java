@@ -15,7 +15,7 @@ class BackstagePasses extends AbstractItem
         if (item.sellIn < 6) {
             increaseQuality();
         }
-        if (item.sellIn < 0) {
+        if (item.sellIn < 1) {
             item.quality = 0;
         }
         decreaseSellIn();

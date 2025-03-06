@@ -12,5 +12,6 @@ class ConjuredDecorator extends AbstractItem {
     protected void updateQuality() {
         decoratedItem.updateQuality();
         decoratedItem.updateQuality(); // Appliquer la dégradation deux fois
+        decoratedItem.increaseSellIn();
     }
 }
