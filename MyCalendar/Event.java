@@ -1,3 +1,6 @@
+import java.time.LocalDateTime;
+import java.util.List;
+
 public class Event {
     private final TypeEvenement type;
     private final TitreEvenement titre;
@@ -20,36 +23,36 @@ public class Event {
         this.frequenceJours = frequenceJours;
     }
 
-    public TypeEvenement getType() {
-        return type;
+    public String getType() {
+        return type.getType();
     }
 
-    public TitreEvenement getTitre() {
-        return titre;
+    public String getTitre() {
+        return titre.getTitre();
     }
 
-    public ProprietaireEvenement getProprietaire() {
-        return proprietaire;
+    public String getProprietaire() {
+        return proprietaire.getProprietaire();
     }
 
-    public DateEvenement getDateDebut() {
-        return dateDebut;
+    public LocalDateTime getDateDebut() {
+        return dateDebut.getDate();
     }
 
-    public DureeEvenement getDuree() {
-        return duree;
+    public int getDuree() {
+        return duree.getDureeMinutes();
     }
 
-    public LieuEvenement getLieu() {
-        return lieu;
+    public String getLieu() {
+        return lieu.getLieu();
     }
 
-    public ParticipantsEvenement getParticipants() {
-        return participants;
+    public List<String> getParticipants() {
+        return participants.getParticipants();
     }
 
-    public FrequenceJoursEvenement getFrequenceJours() {
-        return frequenceJours;
+    public int getFrequenceJours() {
+        return frequenceJours.getFrequenceJours();
     }
 
     public String description() {
