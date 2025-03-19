@@ -1,3 +1,5 @@
+package events;
+
 import java.util.List;
 
 public class EvenementPeriodique extends Event {

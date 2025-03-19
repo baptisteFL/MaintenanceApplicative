@@ -1,3 +1,5 @@
+package events;
+
 public class TypeEvenement
 {
     private final String type;

@@ -1,3 +1,5 @@
+package events;
+
 public class LieuEvenement {
     private final String lieu;
 

@@ -1,3 +1,5 @@
+package events;
+
 public class ParticipantEvenement
 {
     private final String participant;

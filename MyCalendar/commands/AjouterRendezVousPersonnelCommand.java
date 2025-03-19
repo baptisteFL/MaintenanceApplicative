@@ -1,7 +1,12 @@
+package commands;
+
+import events.*;
+
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-public class AjouterRendezVousPersonnelCommand implements Command {
+public class AjouterRendezVousPersonnelCommand implements Command
+{
     private final CalendarManager calendar;
     private final Scanner scanner;
     private final String utilisateur;

@@ -14,7 +14,7 @@ Pour pimenter un peu les choses, il y aura quelques petites contraintes:
 
 
 ## 📌 Contexte du TP :
-Votre supérieur, fan de *COBOL* et "autodicacte" a dévellopé un projet nommé **« *CalendarManager* »** (oui, une application avec un nom anglais, c'est plus classe), une application minimaliste de gestion d’événements et rendez-vous. Il n'a pas du tout confiance en l'utilisation de code externe (il a déjà fallu batailler pour passer aux fax...), donc il n'est même pas la peine de lui proposer une autre solution, même éprouvée. 
+Votre supérieur, fan de *COBOL* et "autodicacte" a dévellopé un projet nommé **« *events.CalendarManager* »** (oui, une application avec un nom anglais, c'est plus classe), une application minimaliste de gestion d’événements et rendez-vous. Il n'a pas du tout confiance en l'utilisation de code externe (il a déjà fallu batailler pour passer aux fax...), donc il n'est même pas la peine de lui proposer une autre solution, même éprouvée. 
 
 L’application souffre d’une mauvaise conception initiale (utilisation excessive de primitives, couplage fort, répétitions de conditionnels, etc.).
 
@@ -35,10 +35,10 @@ Chaque fonctionnalité doit être écrite en suivant strictement la démarche TD
 ### Interdiction des primitives nues :
 Toutes les données métier (dates, heures, durées, titres, lieux) doivent être représentées par des Value Objects immuables.
 Exemples obligatoires de Value Objects : 
-- DateEvenement,
+- events.DateEvenement,
 - HeureDebut,
-- DureeEvenement,
-- TitreEvenement,
+- events.DureeEvenement,
+- events.TitreEvenement,
 - etc.
 
 Aucune primitive brute (int, double, String, Date, etc.) n’est autorisée dans le domaine métier directement.

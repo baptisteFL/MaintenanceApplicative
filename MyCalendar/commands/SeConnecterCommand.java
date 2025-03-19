@@ -1,6 +1,9 @@
+package commands;
+
 import java.util.Scanner;
 
-public class SeConnecterCommand implements Command {
+public class SeConnecterCommand implements Command
+{
     private final Scanner scanner;
     private final String[] utilisateurs;
     private final String[] motsDePasses;

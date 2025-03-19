@@ -1,4 +1,9 @@
-public class AfficherTousEvenementsCommand implements Command {
+package commands;
+
+import events.CalendarManager;
+
+public class AfficherTousEvenementsCommand implements Command
+{
     private final CalendarManager calendar;
 
     public AfficherTousEvenementsCommand(CalendarManager calendar) {

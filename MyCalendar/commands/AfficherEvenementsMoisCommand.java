@@ -1,8 +1,14 @@
+package commands;
+
+import events.CalendarManager;
+import events.Event;
+
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Scanner;
 
-public class AfficherEvenementsMoisCommand implements Command {
+public class AfficherEvenementsMoisCommand implements Command
+{
     private final CalendarManager calendar;
     private final Scanner scanner;
 

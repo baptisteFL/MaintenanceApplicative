@@ -1,3 +1,5 @@
+package events;
+
 public class DureeEvenement {
     private final int dureeMinutes;
 

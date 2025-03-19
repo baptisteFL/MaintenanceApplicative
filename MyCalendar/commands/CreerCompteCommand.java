@@ -1,6 +1,9 @@
+package commands;
+
 import java.util.Scanner;
 
-public class CreerCompteCommand implements Command {
+public class CreerCompteCommand implements Command
+{
     private final Scanner scanner;
     private final String[] utilisateurs;
     private final String[] motsDePasses;

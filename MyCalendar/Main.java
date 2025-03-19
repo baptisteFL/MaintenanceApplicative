@@ -1,3 +1,6 @@
+import commands.*;
+import events.CalendarManager;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -9,8 +12,8 @@ public class Main {
         String utilisateur = null;
         boolean continuer = true;
 
-        String utilisateurs[] = new String[99];
-        String motsDePasses[] = new String[99];
+        String[] utilisateurs = new String[99];
+        String[] motsDePasses = new String[99];
         int nbUtilisateurs = 0;
 
         Map<String, Command> mainMenuCommands = new HashMap<>();

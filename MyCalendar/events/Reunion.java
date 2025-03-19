@@ -1,14 +1,15 @@
-import java.time.LocalDateTime;
-import java.util.List;
+package events;
 
-public class RendezVousPersonnel extends Event {
-    public RendezVousPersonnel(TitreEvenement titre, ProprietaireEvenement proprietaire, DateEvenement dateDebut, DureeEvenement duree) {
-        super(titre, proprietaire, dateDebut, duree, new LieuEvenement(""), new ParticipantsEvenement(List.of()));
+import java.time.LocalDateTime;
+
+public class Reunion extends Event {
+    public Reunion(TitreEvenement titre, ProprietaireEvenement proprietaire, DateEvenement dateDebut, DureeEvenement duree, LieuEvenement lieu, ParticipantsEvenement participants) {
+        super(titre, proprietaire, dateDebut, duree, lieu, participants);
     }
 
     @Override
     public String description() {
-        return getTitre() + " on " + getDateDebut();
+        return getTitre() + " at " + getLieu() + " with " + getParticipants();
     }
 
     @Override

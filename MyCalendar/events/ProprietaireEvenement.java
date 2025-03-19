@@ -1,3 +1,5 @@
+package events;
+
 public class ProprietaireEvenement
 {
     private final String proprietaire;
