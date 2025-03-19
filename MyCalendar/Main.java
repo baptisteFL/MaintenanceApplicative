@@ -174,9 +174,9 @@ public class Main {
                         System.out.print("Durée (en minutes) : ");
                         int duree = Integer.parseInt(scanner.nextLine());
 
-                        calendar.ajouterEvent("RDV_PERSONNEL", titre, utilisateur,
-                                LocalDateTime.of(annee, moisRdv, jourRdv, heure, minute), duree,
-                                "", "", 0);
+                        calendar.ajouterEvent("RDV_PERSONNEL", new TitreEvenement(titre),  new ProprietaireEvenement(utilisateur),
+                                new DateEvenement(LocalDateTime.of(annee, moisRdv, jourRdv, heure, minute)), new DureeEvenement(duree),
+                                new LieuEvenement(""), new ParticipantsEvenement(List.of("")), 0);
 
                         System.out.println("Événement ajouté.");
                         break;
